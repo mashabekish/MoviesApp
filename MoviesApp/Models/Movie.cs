@@ -10,12 +10,12 @@ public class Movie
     public Movie(string title, Type priceType)
     {
         _title = title;
-        SetPriceCode(priceType);
+        SetPriceType(priceType);
     }
 
     public string GetTitle() => _title;
 
-    public void SetPriceCode(Type type)
+    public void SetPriceType(Type type)
     {
         _price = type switch
         {
